@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    background-color: brown;
+    height: 500px;
+    border: 1px solid black;
+    display: grid;
+    /* grid-template-columns: 200px 200px 210px; */
+    /* aise bhi lik skte hai */
+    grid-template-columns: repeat(3,1fr);
+
+    /* ise ye hora hai pehla colum 50px ka or bkki 3 1fr  or dusre trike se tu dono add krkata hai first colum kai liye or last colum kai liye bhoi\*/
+    /* grid-template-columns: 50px repeat(2,1fr) 200px; */
+    /* grid-template-rows: 90px 90px 90px ; */
+    grid-template-rows: repeat(3,1fr);
+    gap: 15px;
+}
+
+.box{
+    background-color: aqua;
+    border: 1px solid black;
+    /* width:  80px; */
+    /* height: 80px; */
+}
+
+/* #box1{
+    grid-column-start:1 ;
+    grid-column-end: 3;
+} */
+/* #box2{
+    grid-row-start: 2;
+    grid-row-end: 4;
+} */
